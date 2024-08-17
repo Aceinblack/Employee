@@ -13,7 +13,8 @@ public class TestEmployee {
 		
 		employee2 = new Employee("Janet", "Joestar", 10034, 65000);
 		
-		
+		employee1.employeeSummary();
+		employee2.employeeSummary();
 	}
 
 }

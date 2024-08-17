@@ -60,7 +60,7 @@ public class Employee {
 	public void employeeSummary() {
 		System.out.println("Employee Name: " + getFirstName() + " " + getLastName());
 		System.out.println("Employee ID: " + getEmployeeID());
-		System.out.println("Salary: " + getSalary());
+		System.out.println("Salary: $" + getSalary());
 	}
 	
 }

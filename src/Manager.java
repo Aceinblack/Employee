@@ -22,7 +22,6 @@ public class Manager extends Employee{
 	//to add department information
 	@Override
 	public void employeeSummary() {
-		System.out.println("Manager");
 		super.employeeSummary();
 		System.out.println("Department: " + getDepartment());
 	}

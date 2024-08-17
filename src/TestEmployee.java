@@ -1,7 +1,13 @@
-
+/**
+ * Creates Employee and Manager objects
+ * and displays them.
+ * @author Brinsly Yendeh
+ * @version 1.0 08/17/2024
+ */
 public class TestEmployee {
 
 	public static void main(String[] args) {
+		//Initialize both Employee objects
 		Manager employee1 = new Manager();
 		Employee employee2;
 		
@@ -13,6 +19,7 @@ public class TestEmployee {
 		
 		employee2 = new Employee("Janet", "Joestar", 10034, 65000);
 		
+		//displays both Employee object contents
 		employee1.employeeSummary();
 		employee2.employeeSummary();
 	}

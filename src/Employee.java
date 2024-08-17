@@ -1,16 +1,17 @@
 /**
- * 
- */
-
-/**
- * 
+ * Class holding employee data, ways to set, get
+ * and display said data
+ * @author Brinsly Yendeh
+ * @version 1.0 08/17/2024
  */
 public class Employee {
+	
 	protected String firstName;
 	protected String lastName;
 	protected int employeeID;
 	protected double salary;
 	
+	//default constructor
 	public Employee() {
 		firstName = "";
 		lastName = "";
@@ -18,12 +19,17 @@ public class Employee {
 		salary = 0.0;
 	}
 	
+	//defined constructor
 	public Employee(String firstName, String lastName, int employeeID, int salary) {
 		this.setFirstName(firstName);
 		this.setLastName(lastName);
 		this.setEmployeeID(employeeID);
 		this.salary = salary;
 	}
+	
+	/**
+	 * setter methods
+	 */
 	
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -41,6 +47,10 @@ public class Employee {
 		this.salary = salary;
 	}
 	
+	/**
+	 * getter methods
+	 */
+	
 	public String getFirstName() {
 		return firstName;
 	}
@@ -57,6 +67,9 @@ public class Employee {
 		return salary;
 	}
 	
+	/**
+	 * Displays employee data
+	 */
 	public void employeeSummary() {
 		System.out.println("Employee Name: " + getFirstName() + " " + getLastName());
 		System.out.println("Employee ID: " + getEmployeeID());

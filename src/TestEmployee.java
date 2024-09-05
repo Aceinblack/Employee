@@ -1,4 +1,5 @@
 /**
+ * 
  * Creates Employee and Manager objects
  * and displays them.
  * @author Brinsly Yendeh
@@ -21,6 +22,7 @@ public class TestEmployee {
 		
 		//displays both Employee object contents
 		employee1.employeeSummary();
+		System.out.println("");
 		employee2.employeeSummary();
 	}
 
